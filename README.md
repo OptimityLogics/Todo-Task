@@ -13,6 +13,7 @@
 
 📁 Project Structure
 
+```
 todo_list_task/
 ├── frontend/
 │   ├── src/
@@ -30,6 +31,7 @@ todo_list_task/
 │   └── package.json
 │
 └── README.md
+```
 
 ⚙️ How to Run
 
