@@ -15,22 +15,36 @@ A full-stack Todo List app where you can add tasks, mark them as completed or pe
 ## 📁 Project Structure
 
 ```
-todo_list_task/
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   └── package.json
-│
+Todo-Task/
 ├── backend/
-│   ├── models/
-│   │   └── Task.js
-│   ├── routes/
-│   │   └── tasks.js
+│   ├── src/
+│   │   ├── common/
+│   │   ├── config/
+│   │   ├── controllers/
+│   │   ├── middlewares/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   └── validation/
+│   ├── app.js
 │   ├── server.js
+│   ├── .env
 │   └── package.json
 │
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── api/
+│   │   ├── assets/
+│   │   ├── App.css
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── .gitignore
+│   ├── eslint.config.js
+│   ├── index.html
+│   └── package.json
+│
+├── .gitignore
 └── README.md
 ```
 
@@ -41,8 +55,8 @@ todo_list_task/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/shreya_18320/todo-list.git
-cd todo_list_task
+git clone https://github.com/OptimityLogics/Todo-Task
+cd Todo-Task
 ```
 
 ### 2. Backend
