@@ -1,17 +1,18 @@
-📝 Todo List
+# 📝 Todo List App
 
-   A full-stack Todo List app where you can add tasks, mark them as completed or pending, filter, search, and paginate them.
+A full-stack Todo List app where you can add tasks, mark them as completed or pending, filter, search, and paginate them.
 
+---
 
+## 🛠️ Tech Stack
 
-🛠️ Tech Stack
+- **Frontend:** React, Axios, Material UI
+- **Backend:** Node.js, Express
+- **Database:** MongoDB, Mongoose
 
-  •	Frontend: React, Axios, Material UI
-  •	Backend: Node.js, Express
-  •	Database: MongoDB, Mongoose
+---
 
-
-📁 Project Structure
+## 📁 Project Structure
 
 ```
 todo_list_task/
@@ -33,38 +34,55 @@ todo_list_task/
 └── README.md
 ```
 
-⚙️ How to Run
+---
 
-1. Clone the Repository
+## ⚙️ How to Run
 
-  •	bash
-  •	git clone https://github.com/OptimityLogics/Todo-Task
-  •	cd todo_list_task
+### 1. Clone the Repository
 
-2. Backend
+```bash
+git clone https://github.com/shreya_18320/todo-list.git
+cd todo_list_task
+```
 
-  •	bash
-  •	cd backend
-  •	npm install
-  •	npm run dev
+### 2. Backend
 
-3. Frontend
+```bash
+cd backend
+npm install
+npm run dev
+```
 
-  •	bash
-  •	cd frontend
-  •	npm install
-  •	npm run dev
-  •	Open `http://localhost:5173` in your browser.
-  •	Make sure MongoDB is running locally before starting the backend.
+### 3. Frontend
 
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
-📡 API Endpoints
+Open `http://localhost:5173` in your browser.
 
-| Method | Endpoint              | Description                                                        |
-|--------|-----------------------|--------------------------------------------------------------------|
-| GET    | `/tasks/all`          | Fetch all tasks (supports `page`, `limit`, `search` query params)  |
-| POST   | `/tasks/create`       | Create a new task                                                  |
-| PUT    | `/tasks/update/:id`   | Toggle task status (completed ↔ pending)                           |
-| GET    | `/tasks/all/:status`  | Filter tasks by `completed` or `pending`                           |
+> Make sure MongoDB is running locally before starting the backend.
 
+---
 
+## 📡 API Endpoints
+
+| Method | Endpoint              | Description                              |
+|--------|-----------------------|------------------------------------------|
+| GET    | `/tasks/all`          | Fetch all tasks (supports `page`, `limit`, `search` query params) |
+| POST   | `/tasks/create`       | Create a new task                        |
+| PUT    | `/tasks/update/:id`   | Toggle task status (completed ↔ pending) |
+| GET    | `/tasks/all/:status`  | Filter tasks by `completed` or `pending` |
+
+---
+
+## ✨ Features
+
+- Add new tasks
+- Toggle task status using a checkbox
+- Filter tasks — All, Completed, Pending
+- 🔍 Search tasks by title
+- 📄 Pagination to browse tasks page by page
+- Frontend syncs with backend on every action
