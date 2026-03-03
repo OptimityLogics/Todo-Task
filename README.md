@@ -1,46 +1,68 @@
-# Todo List Task
+📝 Todo List
 
-This is a simple full-stack Todo List task built using React (frontend) and Node.js with Express (backend).
+   A full-stack Todo List app where you can add tasks, mark them as completed or pending, filter, search, and paginate them.
 
-## What the project does
 
-- Add new tasks from the UI
-- Mark tasks as completed or pending using a checkbox
-- Filter tasks by status — All, Completed, Pending
-- Frontend and backend stay in sync on every action
 
-## Frontend
+🛠️ Tech Stack
 
-- Built using React
-- Used useState and useEffect
-- Connected to backend using Axios
-- Checkbox updates task status instantly
-- UI updates automatically when data changes
+  •	Frontend: React, Axios, Material UI
+  •	Backend: Node.js, Express
+  •	Database: MongoDB, Mongoose
 
-## Backend
 
-- Built using Node.js and Express
-- Created APIs to create, fetch, update, and filter tasks
-- Implemented toggle logic to switch status between completed and pending
-- Filter logic handled on backend using query params
-- Sends structured JSON responses
+📁 Project Structure
 
-## Tech Stack
+todo_list_task/
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   └── package.json
+│
+├── backend/
+│   ├── models/
+│   │   └── Task.js
+│   ├── routes/
+│   │   └── tasks.js
+│   ├── server.js
+│   └── package.json
+│
+└── README.md
 
-- Frontend: React, Axios, MUI
-- Backend: Node.js, Express
-- Database: MongoDB, Mongoose
+⚙️ How to Run
 
-## How to Run
+1. Clone the Repository
 
-1. Clone the repository
-2. Go to backend folder — npm install — npm run dev
-3. Go to frontend folder — npm install — npm run dev
-4. Open http://localhost:5173 in browser
+  •	bash
+  •	git clone https://github.com/OptimityLogics/Todo-Task
+  •	cd todo_list_task
 
-## API Endpoints
+2. Backend
 
-- GET /tasks/all — fetch all tasks
-- POST /tasks/create — create a new task
-- PUT /tasks/update/:id — toggle task status
-- GET /tasks/all/:status — filter tasks by completed or pending
+  •	bash
+  •	cd backend
+  •	npm install
+  •	npm run dev
+
+3. Frontend
+
+  •	bash
+  •	cd frontend
+  •	npm install
+  •	npm run dev
+  •	Open `http://localhost:5173` in your browser.
+  •	Make sure MongoDB is running locally before starting the backend.
+
+
+📡 API Endpoints
+
+| Method | Endpoint              | Description                                                        |
+|--------|-----------------------|--------------------------------------------------------------------|
+| GET    | `/tasks/all`          | Fetch all tasks (supports `page`, `limit`, `search` query params)  |
+| POST   | `/tasks/create`       | Create a new task                                                  |
+| PUT    | `/tasks/update/:id`   | Toggle task status (completed ↔ pending)                           |
+| GET    | `/tasks/all/:status`  | Filter tasks by `completed` or `pending`                           |
+
+
